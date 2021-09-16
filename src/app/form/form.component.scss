@@ -1,0 +1,154 @@
+.form-section {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: .5rem;
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    .medium-text {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .header-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .link {
+      text-decoration: underline;
+      color: blue;
+    }
+
+    .star-icon {
+      cursor: pointer;
+      width: 18px;
+      height: 18px;
+    }
+
+    .close-icon {
+      cursor: pointer;
+      width: 14px;
+      height: 19px;
+    }
+
+    .input {
+      font-family: iranyekan;
+      height: 34px;
+      border-radius: 6px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 0 0.5rem;
+      width: 100%;
+
+      ::placeholder {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .sheba-input {
+      width: 55%;
+    }
+
+    &.date-input-container {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+      .date-input {
+        border: none;
+      }
+
+      .date-icon {
+        margin-left: .5rem;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .light-text {
+      font-size: 11px;
+      color: rgba(0, 0, 0, 0.4);
+      font-weight: 700;
+    }
+
+    .button {
+      font-family: iranyekan;
+      font-size: 12px;
+      background-color: #009fe3;
+      color: #fff;
+      border: none;
+      width: 35%;
+      height: 36px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .disable-button {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .select {
+      width: 47%;
+      height: 36px;
+      border-radius: 6px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 0.4);
+      font-family: iranyekan;
+      cursor: pointer;
+      &:required:invalid {
+        color: #666;
+      }
+      option[value=""][disabled] {
+        display: none;
+      }
+      option {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .payment-period {
+      width: 40%;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 .5rem;
+
+    }
+  }
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .button {
+    font-family: iranyekan;
+    width: 45%;
+    color: #fff;
+    border-radius: 6px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .next-button {
+      background-color: #03c04a;
+  }
+
+  .previous-button {
+      background-color: orange;
+  }
+}

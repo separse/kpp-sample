@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: iranyekan;
+  src: url("/assets/IRANYekanWebRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "dana VF";
+  src: url("/assets/dana2webGX.woff") format("woff-variations"),
+    url("/assets/dana2webGX.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: dana;
+  src: url("/assets/dana-regular.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: dana, iranyekan, Tahoma;
+  direction: rtl;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "dana VF", dana, iranyekan, Tahoma;
+    font-variation-settings: 'FANU' 1;
+  }
+}
+/* font-variation-settings: "wght" 700, "FANU" 1, "wdth" 150, "slnt" 0, "DOTQ" 1, "KASH" 10 */
+
+
+li {
+  list-style: none;
+}
+ul {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+a {
+  transition: all 0.2s !important;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  color: #000000;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
+}
+p,
+pre,
+figure {
+  margin: 0;
+}
+:focus,
+button:focus {
+  outline: 0;
+}
+// @media (min-width: 1200px) {
+//   .container {
+//     max-width: 1185px;
+//   }
+// }
+// @media (min-width: 1550px) {
+//   .container {
+//     max-width: 1550px !important;
+//   }
+// }

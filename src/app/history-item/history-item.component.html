@@ -1,0 +1,23 @@
+<section class="history-item-section">
+  <div class="row">
+    <div class="right-side">
+      <span class="date-text">{{ history.date }}</span>
+      <div class="detail" *ngFor="let detail of history.details">
+        {{ detail.name }}
+      </div>
+    </div>
+    <button class="repeat-button">تکرار حواله</button>
+  </div>
+
+  <div class="row">
+    <div class="right-side">
+      <div class="name">{{ history.name }}</div>
+      <div class="name">{{ history.title }}</div>
+    </div>
+    <div class="header-text">
+      مبلغ:
+      {{ history.price | number }}
+      ریال
+    </div>
+  </div>
+</section>

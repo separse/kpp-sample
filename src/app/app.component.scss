@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .form {
+    width: 30%;
+  }
+
+  .history {
+    width: 55%;
+  }
+}

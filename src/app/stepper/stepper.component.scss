@@ -1,0 +1,63 @@
+.step {
+  padding: 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .stepper {
+    position: relative;
+  }
+
+  .circle {
+    background-color: rgba(0, 0, 0, 0.07);
+    border: 2px solid #03c04a;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .line {
+    top: 23px;
+    left: 11px;
+    height: 100%;
+    position: absolute;
+    border-left: 3px solid #03c04a;
+  }
+
+  &.completed .circle {
+    background-color: #03c04a;
+    border-color: #03c04a;
+  }
+
+  &.active .circle {
+    border-color: #03c04a;
+  }
+
+  &.long {
+    height: 6rem;
+  }
+
+  &.short {
+    height: 3rem;
+  }
+
+  .title-text,
+  .edit-text {
+    color: #03c04a;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 20px;
+    text-align: end;
+  }
+
+  .edit-text {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+  }
+
+  .text-container {
+    flex-direction: column;
+  }
+}

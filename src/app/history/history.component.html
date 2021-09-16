@@ -1,0 +1,83 @@
+<section class="history-section">
+  <div class="row">
+    <div class="header-text">حواله‌های 103334529810245 IR</div>
+
+    <div>
+      <select class="select" name="cars" id="cars">
+        <option value="" disabled selected>شماره بسته</option>
+        <option value="volvo">یک ماهه</option>
+        <option value="saab">سه ماهه</option>
+        <option value="opel">شش ماهه</option>
+        <option value="audi">یک ساله</option>
+      </select>
+      <select class="select" name="cars" id="cars">
+        <option value="" disabled selected>عنوان برداشت</option>
+        <option value="volvo">یک ماهه</option>
+        <option value="saab">سه ماهه</option>
+        <option value="opel">شش ماهه</option>
+        <option value="audi">یک ساله</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row" *ngFor="let history of histories">
+    <app-history-item
+      class="history-item-section"
+      [history]="history"
+    ></app-history-item>
+  </div>
+
+  <div class="row">
+    <div class="count-text">23 مورد</div>
+    <div class="pagination">
+      <div class="pagination-item">
+        <div class="pagination-icon">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-right"
+            class="svg-inline--fa fa-chevron-right fa-w-10"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="pagination-item">
+        <div class="pagination-icon">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="ellipsis-h"
+            class="svg-inline--fa fa-ellipsis-h fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="pagination-item">3</div>
+      <div class="pagination-item">2</div>
+      <div class="pagination-item">1</div>
+      <select class="pagination-select" name="cars" id="cars">
+        <option value="" disabled selected>1</option>
+        <option value="volvo">2</option>
+        <option value="saab">3</option>
+        <option value="opel">4</option>
+        <option value="audi">5</option>
+      </select>
+    </div>
+  </div>
+</section>

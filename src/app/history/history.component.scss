@@ -1,0 +1,104 @@
+.history-section {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    .header-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .select {
+      width: 100px;
+      height: 36px;
+      border-radius: 6px;
+      border: none;
+      color: rgba(0, 0, 0, 0.6);
+      font-family: iranyekan;
+      background-color: rgba(0, 0, 0, 0.07);
+      margin-right: .5rem;
+      cursor: pointer;
+      &:last-of-type {
+        width: 200px;
+      }
+      &:required:invalid {
+        color: #666;
+      }
+      option[value=""][disabled] {
+        display: none;
+      }
+      option {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .history-item-section {
+      width: 100%;
+    }
+
+    .count-text {
+      color: blue;
+      font-size: 12px;
+      margin-right: .5rem;
+
+    }
+
+    .pagination {
+      display: flex;
+
+      .pagination-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        line-height: 15px;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        margin-left: .5rem;
+        font-size: 12px;
+        cursor: pointer;
+        &:first-of-type {
+          border: 1px solid blue;
+          .pagination-icon {
+            color: blue;
+          }
+        }
+        &:last-of-type {
+          border: 1px solid red;
+          color: red;
+        }
+      }
+
+      .pagination-icon {
+        display: flex;
+        margin: auto;
+        width: 6px;
+        height: 16px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .pagination-select {
+        width: 50px;
+        height: 18px;
+        padding: 0 .5rem;
+        border-radius: 6px;
+        border: 1px solid blue;
+        color: blue;
+        cursor: pointer;
+      }
+
+    }
+  }
+}

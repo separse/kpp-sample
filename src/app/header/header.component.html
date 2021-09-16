@@ -1,0 +1,39 @@
+<section class="header">
+  <div class="logos">
+    <div class="logo">
+      <div class="logo-image-container">
+        <img
+          class="logo-image"
+          src="../assets/melat-bank-logo.png"
+          alt="melat-bank-logo"
+        />
+      </div>
+      <div class="logo-content">
+        <div class="logo-content-header red">محب</div>
+        <div class="logo-content-description">مدیریت حساب‌های بانکی</div>
+      </div>
+    </div>
+    <div class="logo">
+      <div class="logo-content">
+        <div class="logo-content-header">علی امین دزفولی</div>
+        <div class="logo-content-description">08:32 - 1399/12/24</div>
+      </div>
+      <div class="logo-image-container">
+        <img
+          class="logo-image"
+          src="../assets/Mokhaberat-logo.jpg"
+          alt="Mokhaberat-logo"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div
+      class="nav-item"
+      [class.red]="item.isActive"
+      *ngFor="let item of navItems"
+    >
+      {{ item.name }}
+    </div>
+  </div>
+</section>
